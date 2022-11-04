@@ -56,5 +56,5 @@ if nav == "Contribute":
     if st.button("submit"):
         to_add = {"YearsExperience":[ex],"Salary":[sal]}
         to_add = pd.DataFrame(to_add)
-        to_add.to_csv("data//Salary_Data.csv",mode='a',header = False,index= False)
+        to_add.to_csv("Salary_Data.csv",mode='a',header = False,index= False)
         st.success("Submitted")
